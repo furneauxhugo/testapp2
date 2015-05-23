@@ -15,11 +15,14 @@
     // device APIs are available
     //
     function onDeviceReady() {
-        // Now safe to use device APIs
+   var element = document.getElementById('deviceProperties');
+   element.innerHTML = 'Device Name: ' + device.name + '<br />' +
+                        'My first app oooh yeh';
     }
 
     </script>
   </head>
   <body onload="onLoad()">
+      <p id="deviceProperties">Loading device Properties...</p>
   </body>
 </html>
